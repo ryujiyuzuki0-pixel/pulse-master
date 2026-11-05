@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "pulse",
+  "version": "${version}",
+  "name": "Pulse Client",
+  "description": "A clean PvP HUD client: keystrokes, CPS, armor, potions, combo, reach, Spotify, FPS boost and more. Press Right Shift in game.",
+  "authors": ["You"],
+  "license": "All-Rights-Reserved",
+  "icon": "assets/pulse/icon.png",
+  "environment": "client",
+  "mixins": ["pulse.mixins.json"],
+  "entrypoints": {
+    "client": ["dev.pulse.client.PulseClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "${minecraft_dep}",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
